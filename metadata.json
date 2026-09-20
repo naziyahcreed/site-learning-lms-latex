@@ -1,0 +1,6 @@
+{
+  "name": "Principia Mathematica: Interactive Treatise",
+  "description": "An academic mathematics textbook featuring interactive step-by-step proofs, guided problem sets, comprehensive mathematical notation library, dark mode, and LaTeX export tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
