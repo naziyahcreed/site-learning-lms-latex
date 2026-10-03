@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { CHAPTERS_DATA } from './data/chaptersData';
+import { getChaptersByMedium, CurriculumMedium } from './data/curriculumData';
 import { ViewMode, BookChapter, BookSection } from './types/math';
 import { AcademicHeader } from './components/AcademicHeader';
 import { ChapterSidebar } from './components/ChapterSidebar';
@@ -49,9 +49,56 @@ export default function App() {
     }
   }, [isDark]);
 
+  // Curriculum subject / medium state (Tamil 10th, English 10th, Science 10th, Maths Ta, Maths En, Classical)
+  const [medium, setMedium] = useState<CurriculumMedium>(() => {
+    try {
+      const saved = localStorage.getItem('principia_curriculum_medium');
+      if (
+        saved === 'tamil' ||
+        saved === 'english' ||
+        saved === 'science' ||
+        saved === 'maths_ta' ||
+        saved === 'maths_en' ||
+        saved === 'classical'
+      ) {
+        return saved as CurriculumMedium;
+      }
+      return 'tamil';
+    } catch {
+      return 'tamil';
+    }
+  });
+
+  const currentChapters = useMemo(() => getChaptersByMedium(medium), [medium]);
+
   // Active chapter and section
-  const [activeChapterId, setActiveChapterId] = useState<string>(CHAPTERS_DATA[0].id);
-  const [activeSectionId, setActiveSectionId] = useState<string>(CHAPTERS_DATA[0].sections[0].id);
+  const [activeChapterId, setActiveChapterId] = useState<string>(() => {
+    const saved = localStorage.getItem('principia_curriculum_medium') as CurriculumMedium;
+    const initialMed = (saved === 'tamil' || saved === 'english' || saved === 'science' || saved === 'maths_ta' || saved === 'maths_en' || saved === 'classical') ? saved : 'tamil';
+    const chapters = getChaptersByMedium(initialMed);
+    return chapters[0]?.id || 'ta_sub_unit_1';
+  });
+
+  const [activeSectionId, setActiveSectionId] = useState<string>(() => {
+    const saved = localStorage.getItem('principia_curriculum_medium') as CurriculumMedium;
+    const initialMed = (saved === 'tamil' || saved === 'english' || saved === 'science' || saved === 'maths_ta' || saved === 'maths_en' || saved === 'classical') ? saved : 'tamil';
+    const chapters = getChaptersByMedium(initialMed);
+    return chapters[0]?.sections[0]?.id || 'ta_sub_sec_1_1';
+  });
+
+  const handleSelectMedium = (newMedium: CurriculumMedium) => {
+    setMedium(newMedium);
+    try {
+      localStorage.setItem('principia_curriculum_medium', newMedium);
+    } catch (e) {
+      console.warn(e);
+    }
+    const newChapters = getChaptersByMedium(newMedium);
+    if (newChapters.length > 0) {
+      setActiveChapterId(newChapters[0].id);
+      setActiveSectionId(newChapters[0].sections[0]?.id || '');
+    }
+  };
 
   // View mode: 'read' (full monograph), 'proofs', 'equations', 'problems'
   const [viewMode, setViewMode] = useState<ViewMode>('read');
@@ -74,13 +121,13 @@ export default function App() {
 
   const totalProblemsCount = useMemo(() => {
     let count = 0;
-    for (const chap of CHAPTERS_DATA) {
+    for (const chap of currentChapters) {
       for (const sec of chap.sections) {
         count += sec.problems.length;
       }
     }
     return count;
-  }, []);
+  }, [currentChapters]);
 
   const updateSolvedCount = () => {
     try {
@@ -117,8 +164,8 @@ export default function App() {
   }, []);
 
   const currentChapter: BookChapter = useMemo(() => {
-    return CHAPTERS_DATA.find(c => c.id === activeChapterId) || CHAPTERS_DATA[0];
-  }, [activeChapterId]);
+    return currentChapters.find(c => c.id === activeChapterId) || currentChapters[0];
+  }, [currentChapters, activeChapterId]);
 
   const currentSection: BookSection = useMemo(() => {
     return currentChapter.sections.find(s => s.id === activeSectionId) || currentChapter.sections[0];
@@ -127,13 +174,13 @@ export default function App() {
   // Section navigation (Previous / Next section)
   const allSectionsList = useMemo(() => {
     const list: { chapterId: string; section: BookSection; chapterRoman: string }[] = [];
-    for (const ch of CHAPTERS_DATA) {
+    for (const ch of currentChapters) {
       for (const sec of ch.sections) {
         list.push({ chapterId: ch.id, section: sec, chapterRoman: ch.romanNumeral });
       }
     }
     return list;
-  }, []);
+  }, [currentChapters]);
 
   const currentSectionIndex = allSectionsList.findIndex(item => item.section.id === currentSection.id);
   const prevSection = currentSectionIndex > 0 ? allSectionsList[currentSectionIndex - 1] : null;
@@ -221,7 +268,7 @@ ${currentSection.introText}
 
 `;
 
-    for (const chap of CHAPTERS_DATA) {
+    for (const chap of currentChapters) {
       monograph += `\\chapter{${chap.title}}\n\\textbf{Subtitle: } ${chap.subtitle}\\\\\n\\emph{Synopsis: } ${chap.synopsis}\n\n`;
 
       for (const sec of chap.sections) {
@@ -271,6 +318,8 @@ ${currentSection.introText}
         onOpenNotation={() => setNotationModalOpen(true)}
         onOpenScratchpad={() => setScratchpadModalOpen(true)}
         onExportSectionLatex={handleExportSectionLatex}
+        medium={medium}
+        onSelectMedium={handleSelectMedium}
       />
 
       {/* Main Layout: Table of Contents Sidebar + Academic Text Stage */}
@@ -278,7 +327,7 @@ ${currentSection.introText}
         {/* Left Sidebar Table of Contents */}
         <div className="hidden md:block">
           <ChapterSidebar
-            chapters={CHAPTERS_DATA}
+            chapters={currentChapters}
             activeChapterId={activeChapterId}
             activeSectionId={activeSectionId}
             onSelectSection={handleSelectSection}
@@ -322,21 +371,21 @@ ${currentSection.introText}
               <span>Pure & Applied Mathematics</span>
             </div>
 
-            <h1 className="font-serif text-3xl sm:text-4xl font-black tracking-tight leading-tight mb-2">
+            <h1 className="font-sans text-3xl sm:text-4xl font-black tracking-normal leading-tight mb-2">
               {currentChapter.title}
             </h1>
 
-            <p className="font-serif italic text-base sm:text-lg text-stone-600 dark:text-stone-400 mb-4">
+            <p className="font-sans text-base sm:text-lg text-stone-600 dark:text-stone-400 mb-4">
               {currentChapter.subtitle}
             </p>
 
             <div className={`p-4 rounded-xl border text-sm leading-relaxed ${
               isDark ? 'bg-[#12161f] border-stone-800 text-stone-300' : 'bg-[#f4efe6] border-stone-200 text-stone-700'
             }`}>
-              <span className="font-serif font-bold text-xs uppercase tracking-wider block mb-1 text-stone-500">
+              <span className="font-sans font-bold text-xs uppercase tracking-wider block mb-1 text-stone-500">
                 Chapter Synopsis:
               </span>
-              <p>{currentChapter.synopsis}</p>
+              <p className="font-sans leading-relaxed">{currentChapter.synopsis}</p>
             </div>
           </div>
 
@@ -346,12 +395,12 @@ ${currentSection.introText}
               <span className="font-mono text-base font-bold text-amber-600 dark:text-amber-400">
                 § {currentSection.sectionNumber}
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight">
+              <h2 className="font-sans text-2xl sm:text-3xl font-bold tracking-normal">
                 {currentSection.title}
               </h2>
             </div>
 
-            <div className="text-base leading-relaxed font-serif text-stone-700 dark:text-stone-300 border-l-2 border-stone-300 dark:border-stone-700 pl-4 py-1 my-4">
+            <div className="text-base leading-relaxed font-sans text-stone-700 dark:text-stone-300 border-l-2 border-stone-300 dark:border-stone-700 pl-4 py-1 my-4">
               <FormattedMathText text={currentSection.introText} />
             </div>
           </div>

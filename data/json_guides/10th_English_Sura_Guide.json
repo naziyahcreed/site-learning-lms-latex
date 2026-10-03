@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "source_pdf": "10th_English_Sura_Guide.pdf",
+    "subject": "English",
+    "subject_code": "eng_10",
+    "standard": "10th Standard (SSLC)",
+    "curriculum": "Tamil Nadu State Board - Samacheer Kalvi",
+    "medium": "English Medium",
+    "guide_publisher": "Sura Publications (சுரா கையேடு)",
+    "evaluation_scheme": "Sura Guide Centum Evaluation Rubric",
+    "total_pages": 2,
+    "total_chapters": 2,
+    "total_questions": 9
+  },
+  "chapters": [
+    {
+      "unit_id": "unit_1",
+      "title": "UNIT 1: Prose - His First Flight (Liam O'Flaherty) & Poem - Life (Henry Van Dyke)",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "The young seagull was alone on his ledge. (Choose the synonym of 'ledge')",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "a narrow horizontal shelf projecting from a wall or cliff",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "He failed to muster up courage to take that plunge. (Choose the antonym of 'muster')",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "disperse / dismiss",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "Why was the young seagull afraid to fly?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "The young seagull felt certain that his wings would never support him across the vast expanse of the sea, so he bent his head and ran back to his hole.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "How did the parents support and encourage the seagull's siblings?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "The parents flew with them, perfecting them in the art of flight, teaching them how to skim the waves and how to dive for fish.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "Describe the struggles undergone by the young seagull to overcome its fear of flying.",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Paragraph Outline: Introduction - Fear of Flight - Starvation - Mother's Strategy - First Flight - Conclusion.",
+          "steps": [
+            {
+              "step": "Step 1",
+              "content": "Introduction: 'His First Flight' by Liam O'Flaherty portrays how confidence and necessity overcome fear.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 2",
+              "content": "The Struggle: The young seagull was left alone on the ledge for 24 hours without food.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "Mother's clever trick: His mother tore a piece of fish and flew close to him, halting just out of reach.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "The Leap: Maddened by hunger, the young bird dived at the fish and fell outward into space.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Flying with Joy: His wings spread wide, wind rushed past his feathers, and he soared gracefully over the sea.",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "5 Marks"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit_2",
+      "title": "UNIT 2: Prose - The Night the Ghost Got In (James Thurber) & Poem - The Grumble Family",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "Identify the prepositional phrase: 'He walked into the dark hallway with great caution.'",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "'with great caution' (manner) and 'into the dark hallway' (direction)",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "What caused the grandfather to mistake the policemen for deserters?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "Grandfather was mentally back in the American Civil War era and thought General Meade's men were retreating from the battle of Stones River.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "What advice does the poet give in 'The Grumble Family'?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "The poet advises us never to grumble or complain about our situation, and never to let our feet wander into 'Grumble Street'.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "Summarize the comical events that took place in the narrator's house in 'The Night the Ghost Got In'.",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Step 1: Mysterious Footsteps: Narrator heard footsteps around the dining table at 1:15 AM and suspected ghosts.",
+          "steps": [
+            {
+              "step": "Step 2",
+              "content": "Mother's Misunderstanding: Mother thought burglars had entered and threw a shoe through the neighbor's window.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "Police Arrival: The police arrived with weapons, broke through the doors, and searched the rooms.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "Grandfather's Retaliation: Grandfather grabbed a gun from a policeman and fired, injuring a cop in the shoulder.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Morning Revelation: Next morning at breakfast, grandfather casually revealed he had come downstairs for water!",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "1 Mark"
+        }
+      ]
+    }
+  ],
+  "raw_pages": [
+    {
+      "page_number": 1,
+      "char_count": 1921,
+      "text": "10TH ENGLISH SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 ENGLISH\nSURA GUIDE COMPLETE QUESTION BANK & STEP-BY-STEP MARKING SCHEME\nUNIT 1: Prose - His First Flight (Liam O'Flaherty) & Poem - Life (Henry Van Dyke)\n### 1 Mark Questions (Synonyms, Antonyms, MCQs)\nQ1: The young seagull was alone on his ledge. (Choose the synonym of 'ledge')\nAns: a narrow horizontal shelf projecting from a wall or cliff [1 Mark]\nQ2: He failed to muster up courage to take that plunge. (Choose the antonym of 'muster')\nAns: disperse / dismiss [1 Mark]\n### 2 Marks Short Answer Questions\nQ3: Why was the young seagull afraid to fly?\nAns: The young seagull felt certain that his wings would never support him across the vast expanse of the sea, so he bent his head and ran back to his hole. [2 Marks]\nQ4: How did the parents support and encourage the seagull's siblings?\nAns: The parents flew with them, perfecting them in the art of flight, teaching them how to skim the waves and how to dive for fish. [2 Marks]\n### 5 Marks Paragraph Question (Sura Guide Exam Template)\nQ5: Describe the struggles undergone by the young seagull to overcome its fear of flying.\nAns: Paragraph Outline: Introduction - Fear of Flight - Starvation - Mother's Strategy - First Flight - Conclusion.\nStep 1: Introduction: 'His First Flight' by Liam O'Flaherty portrays how confidence and necessity overcome fear. [1 Mark]\nStep 2: The Struggle: The young seagull was left alone on the ledge for 24 hours without food. [1 Mark]\nStep 3: Mother's clever trick: His mother tore a piece of fish and flew close to him, halting just out of reach. [1 Mark]\nStep 4: The Leap: Maddened by hunger, the young bird dived at the fish and fell outward into space. [1 Mark]\nStep 5: Flying with Joy: His wings spread wide, wind rushed past his feathers, and he soared gracefully over the sea. [1 Mark]\n"
+    },
+    {
+      "page_number": 2,
+      "char_count": 1689,
+      "text": "10TH ENGLISH SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 ENGLISH - Continued\nUNIT 2: Prose - The Night the Ghost Got In (James Thurber) & Poem - The Grumble Family\n### 1 Mark Vocabulary & Grammar Questions\nQ1: Identify the prepositional phrase: 'He walked into the dark hallway with great caution.'\nAns: 'with great caution' (manner) and 'into the dark hallway' (direction) [1 Mark]\n### 2 Marks Short Answer Questions\nQ2: What caused the grandfather to mistake the policemen for deserters?\nAns: Grandfather was mentally back in the American Civil War era and thought General Meade's men were retreating from the battle of Stones River. [2 Marks]\nQ3: What advice does the poet give in 'The Grumble Family'?\nAns: The poet advises us never to grumble or complain about our situation, and never to let our feet wander into 'Grumble Street'. [2 Marks]\n### 5 Marks Essay Question\nQ4: Summarize the comical events that took place in the narrator's house in 'The Night the Ghost Got In'.\nAns: Step 1: Mysterious Footsteps: Narrator heard footsteps around the dining table at 1:15 AM and suspected ghosts. [1 Mark]\nStep 2: Mother's Misunderstanding: Mother thought burglars had entered and threw a shoe through the neighbor's window. [1 Mark]\nStep 3: Police Arrival: The police arrived with weapons, broke through the doors, and searched the rooms. [1 Mark]\nStep 4: Grandfather's Retaliation: Grandfather grabbed a gun from a policeman and fired, injuring a cop in the shoulder. [1 Mark]\nStep 5: Morning Revelation: Next morning at breakfast, grandfather casually revealed he had come downstairs for water! [1 Mark]\n"
+    }
+  ]
+}

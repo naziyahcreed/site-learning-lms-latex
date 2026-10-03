@@ -106,7 +106,7 @@ export const ChapterSidebar: React.FC<ChapterSidebarProps> = ({
                   <span className="font-serif font-bold text-xs text-amber-600 dark:text-amber-400">
                     Chapter {chapter.romanNumeral}.
                   </span>
-                  <span className="font-serif text-sm font-semibold leading-tight line-clamp-1">
+                  <span className="font-sans text-sm font-semibold leading-tight line-clamp-1">
                     {chapter.title}
                   </span>
                 </div>

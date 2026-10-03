@@ -1,28 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @layer base {
   body {
-    font-family: 'EB Garamond', Garamond, 'Libre Baskerville', Georgia, serif;
-    text-rendering: optimizeLegibility;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Tamil', 'Mukta Malar', system-ui, -apple-system, sans-serif;
+    text-rendering: auto;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Custom font declarations */
+  /* Custom font declarations with explicit Tamil fallbacks */
   .font-serif {
-    font-family: 'EB Garamond', Garamond, 'Libre Baskerville', Georgia, serif;
+    font-family: 'EB Garamond', 'Noto Serif Tamil', 'Noto Sans Tamil', 'Mukta Malar', Georgia, serif;
+    letter-spacing: normal !important;
   }
 
   .font-display {
-    font-family: 'Cinzel', 'EB Garamond', Georgia, serif;
+    font-family: 'Cinzel', 'Noto Serif Tamil', 'Noto Sans Tamil', 'EB Garamond', Georgia, serif;
+    letter-spacing: normal !important;
   }
 
   .font-sans {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Tamil', 'Mukta Malar', system-ui, -apple-system, sans-serif;
+    letter-spacing: normal !important;
   }
 
   .font-mono {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', 'Noto Sans Tamil', monospace;
   }
+}
+
+/* Ensure Tamil text ligatures never break from letter-spacing */
+:lang(ta), [lang="ta"], .font-tamil,
+[class*="tracking-"] {
+  /* Tamil ligatures require normal letter-spacing */
+  letter-spacing: normal !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: normal !important;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* KaTeX custom responsive scaling and Tamil font support */
+.katex-display {
+  margin: 0.5em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+  max-width: 100%;
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+/* Fix KaTeX Tamil character rendering: force Noto Sans Tamil fallback */
+.katex, .katex-html, .katex .text, .katex .mord, .katex .brahmic_fallback, .katex .mathbf {
+  font-family: KaTeX_Main, 'Noto Sans Tamil', 'Noto Serif Tamil', 'Mukta Malar', sans-serif !important;
 }
 
 /* Custom scrollbars for academic monograph */
@@ -42,16 +76,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(150, 150, 150, 0.5);
-}
-
-/* KaTeX custom responsive scaling */
-.katex-display {
-  margin: 0.5em 0 !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 4px 0;
-}
-
-.katex {
-  font-size: 1.1em;
 }

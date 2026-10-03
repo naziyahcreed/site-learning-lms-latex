@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "source_pdf": "10th_Tamil_Sura_Guide.pdf",
+    "subject": "Tamil (தமிழ்)",
+    "subject_code": "tam_10",
+    "standard": "10th Standard (SSLC)",
+    "curriculum": "Tamil Nadu State Board - Samacheer Kalvi",
+    "medium": "Tamil Medium",
+    "guide_publisher": "Sura Publications (சுரா கையேடு)",
+    "evaluation_scheme": "Sura Guide Centum Evaluation Rubric",
+    "total_pages": 2,
+    "total_chapters": 2,
+    "total_questions": 9
+  },
+  "chapters": [
+    {
+      "unit_id": "unit_1",
+      "title": "UNIT 1: Iyal 1 - Mozhi (Annai Mozhiye, Tamil Cholvalam, Erattura Mozhithal, Ezhuthu Chol)",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "What does Thamizhaganar refer to by the phrase 'Metha Vanigalan'?",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Merchant ships and the Five Great Epics (Vaniga kappalgalum Aimberum kappiyangalum)",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "Identify what 'Kaintha Ilaiyum Kaintha Thogaiyum' denotes as fertilizer.",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Sarugu and Sandu (Dry fallen leaves and dry banana leaves)",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "Distinguish 'Vengai' as Thodarmoli and Pothumoli.",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "1) Thodarmoli: Vem + kai = hand that burns. 2) Pothumoli: Vengai refers both to the tree (thanimoli) and the burning hand (thodarmoli). [1 Mark]",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "How does Pavalareru Perunchithiranar praise mother Tamil in Annai Mozhiye?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "He hails Tamil as the fertile Muththamizh, the sweet fruit, Sangam literature treasure, Ten Idylls, Eight Anthologies, Silappathikaram, and Manimekalai.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "Describe the vocabulary richness of Tamil language and the need for new terminologies.",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Outline: Munnurai - Cholvalam - Thavara Uruppugal - Chollakka Thevai - Mudivurai.",
+          "steps": [
+            {
+              "step": "Step 1",
+              "content": "Introduction: Tamil language is pre-eminent in rich vocabulary compared to other languages.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 2",
+              "content": "Base of Plants: Thal, thandu, kol, thoori describe different types of stems.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "Leaf types: Ilai, thal, thogai, olai, sandu, sarugu describe different states of leaves.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "Stages of flower: Arumbu, pothu, malar, vee, semmal denote the seven distinct stages of a flower.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Conclusion: It is our duty to coin modern scientific terms and enrich the Tamil vocabulary.",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "5 Marks"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit_2",
+      "title": "UNIT 2: Iyal 2 - Iyarkai, Soozhal (Kaatre Vaa, Mullaipattu, Puyalile Oru Thoni)",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "What are the poetic devices in 'Unakku paattugal paadugirom / Unakku pugazhchigal koorugirom'?",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Monai (initial rhyme) and Ethugai (second letter rhyme).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "What is 'Vasana Kavithai'?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "Free verse poetry combining prose and poetry beyond traditional metrical constraints, introduced in Tamil by Mahakavi Bharathiyar.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "What did the old women do while seeking 'Viruchi' in Mullaipattu?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "They scattered paddy and mullai flowers to worship God and waited to hear auspicious words of goodwill.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "Explain the rainy season descriptions portrayed in Mullaipattu.",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Step 1: Heavy Rainfall: Clouds rose spiraling clockwise over mountains pouring torrents of rain.",
+          "steps": [
+            {
+              "step": "Step 2",
+              "content": "Military Camp: Warriors dug moats and raised thorny fences in the forest tracts.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "King's determination: The king stayed awake planning military victory for the nation.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "Distress of separation: The heroine grieved awaiting the hero's arrival in the rainy season.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Sura Guide Conclusion: Mullaipattu vividly portrays human emotions intertwined with nature.",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "1 Mark"
+        }
+      ]
+    }
+  ],
+  "raw_pages": [
+    {
+      "page_number": 1,
+      "char_count": 1947,
+      "text": "10TH TAMIL SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 TAMIL\nSURA GUIDE FULL QUESTION BANK & STEP-BY-STEP EVALUATION SCHEME\nUNIT 1: Iyal 1 - Mozhi (Annai Mozhiye, Tamil Cholvalam, Erattura Mozhithal, Ezhuthu Chol)\n### 1 Mark Objective Questions (Palavul Therivu)\nQ1: What does Thamizhaganar refer to by the phrase 'Metha Vanigalan'?\nAns: Merchant ships and the Five Great Epics (Vaniga kappalgalum Aimberum kappiyangalum) [1 Mark]\nQ2: Identify what 'Kaintha Ilaiyum Kaintha Thogaiyum' denotes as fertilizer.\nAns: Sarugu and Sandu (Dry fallen leaves and dry banana leaves) [1 Mark]\n### 2 Marks Short Answer Questions (Kuru Vina)\nQ3: Distinguish 'Vengai' as Thodarmoli and Pothumoli.\nAns: 1) Thodarmoli: Vem + kai = hand that burns. [1 Mark]\n     2) Pothumoli: Vengai refers both to the tree (thanimoli) and the burning hand (thodarmoli). [1 Mark]\nQ4: How does Pavalareru Perunchithiranar praise mother Tamil in Annai Mozhiye?\nAns: He hails Tamil as the fertile Muththamizh, the sweet fruit, Sangam literature treasure, Ten Idylls, Eight Anthologies, Silappathikaram, and Manimekalai. [2 Marks]\n### 5 Marks Detailed Answer (Neduvina - Sura Guide Template)\nQ5: Describe the vocabulary richness of Tamil language and the need for new terminologies.\nAns: Outline: Munnurai - Cholvalam - Thavara Uruppugal - Chollakka Thevai - Mudivurai.\nStep 1: Introduction: Tamil language is pre-eminent in rich vocabulary compared to other languages. [1 Mark]\nStep 2: Base of Plants: Thal, thandu, kol, thoori describe different types of stems. [1 Mark]\nStep 3: Leaf types: Ilai, thal, thogai, olai, sandu, sarugu describe different states of leaves. [1 Mark]\nStep 4: Stages of flower: Arumbu, pothu, malar, vee, semmal denote the seven distinct stages of a flower. [1 Mark]\nStep 5: Conclusion: It is our duty to coin modern scientific terms and enrich the Tamil vocabulary. [1 Mark]\n"
+    },
+    {
+      "page_number": 2,
+      "char_count": 1464,
+      "text": "10TH TAMIL SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 TAMIL - Continued\nUNIT 2: Iyal 2 - Iyarkai, Soozhal (Kaatre Vaa, Mullaipattu, Puyalile Oru Thoni)\n### 1 Mark Objective Questions\nQ1: What are the poetic devices in 'Unakku paattugal paadugirom / Unakku pugazhchigal koorugirom'?\nAns: Monai (initial rhyme) and Ethugai (second letter rhyme). [1 Mark]\n### 2 Marks Short Answer Questions\nQ2: What is 'Vasana Kavithai'?\nAns: Free verse poetry combining prose and poetry beyond traditional metrical constraints, introduced in Tamil by Mahakavi Bharathiyar. [2 Marks]\nQ3: What did the old women do while seeking 'Viruchi' in Mullaipattu?\nAns: They scattered paddy and mullai flowers to worship God and waited to hear auspicious words of goodwill. [2 Marks]\n### 5 Marks Detailed Answer\nQ4: Explain the rainy season descriptions portrayed in Mullaipattu.\nAns: Step 1: Heavy Rainfall: Clouds rose spiraling clockwise over mountains pouring torrents of rain. [1 Mark]\nStep 2: Military Camp: Warriors dug moats and raised thorny fences in the forest tracts. [1 Mark]\nStep 3: King's determination: The king stayed awake planning military victory for the nation. [1 Mark]\nStep 4: Distress of separation: The heroine grieved awaiting the hero's arrival in the rainy season. [1 Mark]\nStep 5: Sura Guide Conclusion: Mullaipattu vividly portrays human emotions intertwined with nature. [1 Mark]\n"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ViewMode } from '../types/math';
+import { CurriculumMedium, MEDIUM_OPTIONS } from '../data/curriculumData';
 import { 
   Sun, 
   Moon, 
@@ -10,7 +11,9 @@ import {
   Award, 
   GitBranch,
   Layers,
-  ChevronRight
+  ChevronRight,
+  ChevronDown,
+  Languages
 } from 'lucide-react';
 
 interface AcademicHeaderProps {
@@ -25,6 +28,8 @@ interface AcademicHeaderProps {
   onOpenNotation: () => void;
   onOpenScratchpad: () => void;
   onExportSectionLatex: () => void;
+  medium: CurriculumMedium;
+  onSelectMedium: (medium: CurriculumMedium) => void;
 }
 
 export const AcademicHeader: React.FC<AcademicHeaderProps> = ({
@@ -39,6 +44,8 @@ export const AcademicHeader: React.FC<AcademicHeaderProps> = ({
   onOpenNotation,
   onOpenScratchpad,
   onExportSectionLatex,
+  medium,
+  onSelectMedium,
 }) => {
   return (
     <header 
@@ -130,6 +137,74 @@ export const AcademicHeader: React.FC<AcademicHeaderProps> = ({
 
       {/* Right Actions */}
       <div className="flex items-center gap-2">
+        {/* Subject & Medium Selector */}
+        <div className="flex items-center gap-1.5">
+          {/* Quick Subject Tabs for Primary Subjects */}
+          <div className="hidden sm:flex items-center bg-stone-200/60 dark:bg-stone-800/80 p-0.5 rounded-lg text-xs font-medium">
+            <button
+              id="medium-select-tamil"
+              onClick={() => onSelectMedium('tamil')}
+              className={`px-2.5 py-1.5 rounded-md transition-all flex items-center gap-1 ${
+                medium === 'tamil'
+                  ? isDark ? 'bg-amber-600 text-white shadow-xs font-semibold' : 'bg-white text-stone-900 shadow-xs font-semibold'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
+              }`}
+              title="10ஆம் வகுப்பு தமிழ் - இயல் 1 முதல் 9 வரை"
+            >
+              <span>📖</span>
+              <span>தமிழ்</span>
+            </button>
+            <button
+              id="medium-select-english"
+              onClick={() => onSelectMedium('english')}
+              className={`px-2.5 py-1.5 rounded-md transition-all flex items-center gap-1 ${
+                medium === 'english'
+                  ? isDark ? 'bg-amber-600 text-white shadow-xs font-semibold' : 'bg-white text-stone-900 shadow-xs font-semibold'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
+              }`}
+              title="10th English - Units 1 to 7"
+            >
+              <span>🇬🇧</span>
+              <span>English</span>
+            </button>
+            <button
+              id="medium-select-science"
+              onClick={() => onSelectMedium('science')}
+              className={`px-2.5 py-1.5 rounded-md transition-all flex items-center gap-1 ${
+                medium === 'science'
+                  ? isDark ? 'bg-amber-600 text-white shadow-xs font-semibold' : 'bg-white text-stone-900 shadow-xs font-semibold'
+                  : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200'
+              }`}
+              title="10th Science - Physics, Chemistry, Biology (All Units)"
+            >
+              <span>🔬</span>
+              <span>Science</span>
+            </button>
+          </div>
+
+          {/* All Subjects Dropdown (Including Maths & Classical) */}
+          <div className="relative flex items-center">
+            <select
+              id="all-subjects-select"
+              value={medium}
+              onChange={(e) => onSelectMedium(e.target.value as CurriculumMedium)}
+              className={`text-xs font-medium pl-2.5 pr-7 py-1.5 rounded-lg border cursor-pointer transition-all outline-hidden appearance-none ${
+                isDark 
+                  ? 'border-stone-800 bg-stone-900 text-stone-300 hover:bg-stone-800' 
+                  : 'border-stone-300 bg-white text-stone-700 hover:bg-stone-50 shadow-xs'
+              }`}
+              title="Select Subject Curriculum"
+            >
+              {MEDIUM_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.icon} {opt.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="w-3.5 h-3.5 absolute right-2 pointer-events-none text-stone-400" />
+          </div>
+        </div>
+
         <button
           id="open-notation-library-header-btn"
           onClick={onOpenNotation}

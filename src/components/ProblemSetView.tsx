@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProblemItem, ProblemStepGuide, Difficulty } from '../types/math';
-import { MathRenderer } from './MathRenderer';
+import { MathRenderer, FormattedMathText } from './MathRenderer';
 import { 
   CheckCircle2, 
   HelpCircle, 
@@ -28,6 +28,16 @@ export const ProblemSetView: React.FC<ProblemSetViewProps> = ({
   isDark,
 }) => {
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
+  // Direct Study Mode: Immediately show complete formal solutions for comprehensive reading
+  const [studyMode, setStudyMode] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('principia_study_mode');
+      return saved !== null ? JSON.parse(saved) : true;
+    } catch {
+      return true;
+    }
+  });
+
   const [solvedProblemIds, setSolvedProblemIds] = useState<Record<string, boolean>>(() => {
     try {
       const saved = localStorage.getItem('principia_solved_problems');
@@ -46,6 +56,14 @@ export const ProblemSetView: React.FC<ProblemSetViewProps> = ({
     revealedSteps: Record<number, boolean>;
     showFullWalkthrough: boolean;
   }>>({});
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('principia_study_mode', JSON.stringify(studyMode));
+    } catch (e) {
+      console.warn(e);
+    }
+  }, [studyMode]);
 
   useEffect(() => {
     try {
@@ -193,23 +211,40 @@ ${problem.finalSolutionLatex}
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold text-stone-500 uppercase tracking-wider">
-            Filter:
-          </span>
-          {['All', 'Foundational', 'Intermediate', 'Advanced'].map(diff => (
-            <button
-              key={diff}
-              onClick={() => setSelectedDifficulty(diff)}
-              className={`px-2.5 py-1 text-xs rounded-md font-medium border transition-colors ${
-                selectedDifficulty === diff
-                  ? isDark ? 'bg-amber-600 text-white border-amber-500' : 'bg-amber-600 text-white border-amber-600 shadow-sm'
-                  : isDark ? 'bg-stone-900 border-stone-800 text-stone-400 hover:text-stone-200' : 'bg-white border-stone-300 text-stone-700 hover:bg-stone-50'
-              }`}
-            >
-              {diff}
-            </button>
-          ))}
+        <div className="flex flex-wrap items-center gap-3">
+          {/* Study Mode Toggle */}
+          <button
+            id="toggle-study-mode-btn"
+            onClick={() => setStudyMode(!studyMode)}
+            className={`px-3 py-1.5 text-xs rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-xs ${
+              studyMode
+                ? 'bg-emerald-600 text-white hover:bg-emerald-700 ring-2 ring-emerald-500/30'
+                : isDark ? 'bg-stone-800 text-stone-300 hover:bg-stone-700' : 'bg-stone-200 text-stone-700 hover:bg-stone-300'
+            }`}
+            title="Toggle between direct full answers for studying and interactive multi-step tests"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>{studyMode ? '📖 முழு விடை வாசிப்பு (Full Study Mode)' : '🧩 படிநிலை பயிற்சி (Interactive)'}</span>
+          </button>
+
+          <div className="flex items-center gap-1.5 border-l pl-3 border-stone-300 dark:border-stone-700">
+            <span className="text-xs font-semibold text-stone-500 uppercase tracking-wider">
+              Filter:
+            </span>
+            {['All', 'Foundational', 'Intermediate', 'Advanced'].map(diff => (
+              <button
+                key={diff}
+                onClick={() => setSelectedDifficulty(diff)}
+                className={`px-2.5 py-1 text-xs rounded-md font-medium border transition-colors ${
+                  selectedDifficulty === diff
+                    ? isDark ? 'bg-amber-600 text-white border-amber-500' : 'bg-amber-600 text-white border-amber-600 shadow-sm'
+                    : isDark ? 'bg-stone-900 border-stone-800 text-stone-400 hover:text-stone-200' : 'bg-white border-stone-300 text-stone-700 hover:bg-stone-50'
+                }`}
+              >
+                {diff}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -237,8 +272,8 @@ ${problem.finalSolutionLatex}
                   <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-md border ${getDifficultyBadge(problem.difficulty)}`}>
                     {problem.difficulty}
                   </span>
-                  <h4 className="font-serif text-lg font-bold">
-                    Problem {problem.number}: {problem.title}
+                  <h4 className="font-sans text-lg font-bold tracking-normal">
+                    {problem.number}: {problem.title}
                   </h4>
                   {isSolved && (
                     <span className="flex items-center gap-1 text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
@@ -274,9 +309,11 @@ ${problem.finalSolutionLatex}
 
               {/* Problem Statement Box */}
               <div className="p-6 border-b border-stone-200 dark:border-stone-800">
-                <p className="text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
-                  {problem.description}
-                </p>
+                {problem.description && (
+                  <p className="text-sm font-sans text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
+                    {problem.description}
+                  </p>
+                )}
 
                 <div className={`p-4 rounded-lg border text-center ${
                   isDark ? 'bg-[#0d1117] border-stone-800' : 'bg-[#f8f6f2] border-stone-200'
@@ -285,9 +322,39 @@ ${problem.finalSolutionLatex}
                 </div>
               </div>
 
-              {/* Step-by-Step Guidance Section */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
+              {/* Direct Study Mode View: Directly shows Complete Formal Solution & Rubric */}
+              {studyMode ? (
+                <div className="p-6 space-y-4">
+                  {/* Key LaTeX Formula / Answer Box */}
+                  <div className={`p-4 rounded-xl border ${
+                    isDark ? 'bg-[#101824] border-amber-900/40' : 'bg-amber-50/60 border-amber-200'
+                  }`}>
+                    <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
+                      <Sparkles className="w-4 h-4 text-amber-500" />
+                      <span>முக்கிய விடை / Key Answer Summary:</span>
+                    </div>
+                    <div className={`p-3 rounded-lg border text-center my-1.5 ${
+                      isDark ? 'bg-[#0a0d12] border-stone-800' : 'bg-white border-stone-200 shadow-xs'
+                    }`}>
+                      <MathRenderer math={problem.finalSolutionLatex} block={true} />
+                    </div>
+                  </div>
+
+                  {/* Comprehensive Full Marks Exam Solution Walkthrough */}
+                  <div className={`p-5 rounded-xl border ${
+                    isDark ? 'bg-[#141b24] border-stone-800 text-stone-200' : 'bg-[#faf8f6] border-stone-300 text-stone-900 shadow-xs'
+                  }`}>
+                    <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-3 pb-2 border-b border-stone-200 dark:border-stone-800">
+                      <CheckCircle2 className="w-4 h-4" />
+                      <span>முழுமையான தேர்வு விடை & மதிப்பீட்டு நெறிமுறை (Full Marks Exam Solution Walkthrough):</span>
+                    </div>
+
+                    <FormattedMathText text={problem.fullSolutionWalkthrough} className="text-sm font-sans" />
+                  </div>
+                </div>
+              ) : (
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-amber-500" />
                     <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
@@ -439,12 +506,11 @@ ${problem.finalSolutionLatex}
                       <MathRenderer math={problem.finalSolutionLatex} block={true} />
                     </div>
 
-                    <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed">
-                      {problem.fullSolutionWalkthrough}
-                    </p>
+                    <FormattedMathText text={problem.fullSolutionWalkthrough} className="text-xs font-sans text-stone-700 dark:text-stone-300 leading-relaxed" />
                   </div>
                 )}
               </div>
+              )}
             </div>
           );
         })}

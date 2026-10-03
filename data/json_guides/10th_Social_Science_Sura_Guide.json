@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "source_pdf": "10th_Social_Science_Sura_Guide.pdf",
+    "subject": "Social Science (சமூக அறிவியல்)",
+    "subject_code": "soc_10",
+    "standard": "10th Standard (SSLC)",
+    "curriculum": "Tamil Nadu State Board - Samacheer Kalvi",
+    "medium": "English / Tamil Medium",
+    "guide_publisher": "Sura Publications (சுரா கையேடு)",
+    "evaluation_scheme": "Sura Guide Centum Evaluation Rubric",
+    "total_pages": 2,
+    "total_chapters": 2,
+    "total_questions": 10
+  },
+  "chapters": [
+    {
+      "unit_id": "unit_1",
+      "title": "UNIT 1 (HISTORY): Outbreak of World War I & UNIT 1 (GEOGRAPHY): India - Relief and Drainage",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "What were the three major empires that collapsed after World War I?",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "German, Russian, and Austro-Hungarian Empires.",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "The highest peak in South India is...",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Anamudi (2,695 meters, located in Anaimalai Hills).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "What was the immediate cause of the First World War?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "On 28 June 1914, Archduke Franz Ferdinand, the heir to the throne of Austria-Hungary, was assassinated by Gavrilo Princip, a Bosnian Serb, at Sarajevo.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "Distinguish between Western Ghats and Eastern Ghats.",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "1) Western Ghats: Continuous range, higher altitude (avg 2,000m to 3,000m), origin of major rivers like Godavari, Krishna, Cauvery. 2) Eastern Ghats: Discontinuous range, lower elevation (avg 1,100m), dissected by eastward-flowing rivers entering the Bay of Bengal. [1 Mark]",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "Describe the major physical divisions of Northern Mountains (Himalayas).",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Outline: Introduction - Trans-Himalayas - Greater Himalayas (Himadri) - Lesser Himalayas (Himachal) - Outer Himalayas (Siwaliks).",
+          "steps": [
+            {
+              "step": "Step 1",
+              "content": "Introduction: The Himalayas act as the northern crown of India extending 2,400 km from Indus to Brahmaputra.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 2",
+              "content": "Trans-Himalayas (Tibetan Himalayas): Lies north of the Great Himalayas; includes Karakoram, Ladakh, and Zaskar ranges.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "Greater Himalayas (Himadri): Most continuous range with average height of 6,000 m; includes Mt. Everest (8,848 m) and Kanchenjunga.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "Lesser Himalayas (Himachal): Altitude 3,700m - 4,500m; famous for hill stations like Shimla, Mussoorie, Nainital, Darjeeling.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Outer Himalayas (Siwaliks): Youngest range with altitude 900m - 1,100m; longitudinal valleys between Himachal and Siwalik are called Duns (e.g. Dehradun).",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "5 Marks"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit_2",
+      "title": "UNIT 2 (CIVICS): Indian Constitution & UNIT 2 (ECONOMICS): Gross Domestic Product (GDP)",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "Which article of the Indian Constitution is described by Dr. B.R. Ambedkar as the 'Heart and Soul of the Constitution'?",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Article 32 (Right to Constitutional Remedies).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "Which sector is also known as the Service Sector in Indian economy?",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Tertiary Sector (Transport, Banking, Healthcare, Education).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "Define Gross Domestic Product (GDP).",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "GDP is the total monetary value of all the finished goods and services produced within the domestic territory of a country during a specific period of time (normally one year).",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "What are the fundamental rights guaranteed by the Indian Constitution?",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "1. Right to Equality, 2. Right to Freedom, 3. Right against Exploitation, 4. Right to Freedom of Religion, 5. Cultural and Educational Rights, 6. Right to Constitutional Remedies.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "Explain the salient features of the Constitution of India.",
+          "category": "5 Marks Detailed / Paragraph",
+          "marks": 5,
+          "answer_text": "Step 1: Lengthiest Written Constitution: Most detailed constitution in the world with Preamble, Articles, Parts, and Schedules.",
+          "steps": [
+            {
+              "step": "Step 2",
+              "content": "Blend of Rigidity and Flexibility: Some provisions require special parliamentary majority, others require simple majority.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "Federal System with Unitary Bias: Dual government structure with strong central power during emergencies.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "Secular State & Universal Adult Suffrage: No state religion; equal voting rights for all citizens aged 18 and above without discrimination.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Independent Judiciary & Fundamental Rights: Single integrated judicial system with Supreme Court as guardian of rights.",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "1 Mark"
+        }
+      ]
+    }
+  ],
+  "raw_pages": [
+    {
+      "page_number": 1,
+      "char_count": 2211,
+      "text": "10TH SOCIAL SCIENCE SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 SOCIAL SCIENCE\nSURA GUIDE COMPLETE QUESTION BANK (HISTORY, GEOGRAPHY, CIVICS, ECONOMICS) & SCHEME\nUNIT 1 (HISTORY): Outbreak of World War I & UNIT 1 (GEOGRAPHY): India - Relief and Drainage\n### 1 Mark Objective Questions\nQ1: What were the three major empires that collapsed after World War I?\nAns: German, Russian, and Austro-Hungarian Empires. [1 Mark]\nQ2: The highest peak in South India is...\nAns: Anamudi (2,695 meters, located in Anaimalai Hills). [1 Mark]\n### 2 Marks Short Answer Questions\nQ3: What was the immediate cause of the First World War?\nAns: On 28 June 1914, Archduke Franz Ferdinand, the heir to the throne of Austria-Hungary, was assassinated by Gavrilo Princip, a Bosnian Serb, at Sarajevo. [2 Marks]\nQ4: Distinguish between Western Ghats and Eastern Ghats.\nAns: 1) Western Ghats: Continuous range, higher altitude (avg 2,000m to 3,000m), origin of major rivers like Godavari, Krishna, Cauvery. [1 Mark]\n     2) Eastern Ghats: Discontinuous range, lower elevation (avg 1,100m), dissected by eastward-flowing rivers entering the Bay of Bengal. [1 Mark]\n### 5 Marks Detailed Answer (Sura Guide Exam Standard)\nQ5: Describe the major physical divisions of Northern Mountains (Himalayas).\nAns: Outline: Introduction - Trans-Himalayas - Greater Himalayas (Himadri) - Lesser Himalayas (Himachal) - Outer Himalayas (Siwaliks).\nStep 1: Introduction: The Himalayas act as the northern crown of India extending 2,400 km from Indus to Brahmaputra. [1 Mark]\nStep 2: Trans-Himalayas (Tibetan Himalayas): Lies north of the Great Himalayas; includes Karakoram, Ladakh, and Zaskar ranges. [1 Mark]\nStep 3: Greater Himalayas (Himadri): Most continuous range with average height of 6,000 m; includes Mt. Everest (8,848 m) and Kanchenjunga. [1 Mark]\nStep 4: Lesser Himalayas (Himachal): Altitude 3,700m - 4,500m; famous for hill stations like Shimla, Mussoorie, Nainital, Darjeeling. [1 Mark]\nStep 5: Outer Himalayas (Siwaliks): Youngest range with altitude 900m - 1,100m; longitudinal valleys between Himachal and Siwalik are called Duns (e.g. Dehradun). [1 Mark]\n"
+    },
+    {
+      "page_number": 2,
+      "char_count": 1941,
+      "text": "10TH SOCIAL SCIENCE SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 SOCIAL SCIENCE - Continued\nUNIT 2 (CIVICS): Indian Constitution & UNIT 2 (ECONOMICS): Gross Domestic Product (GDP)\n### 1 Mark Questions\nQ1: Which article of the Indian Constitution is described by Dr. B.R. Ambedkar as the 'Heart and Soul of the Constitution'?\nAns: Article 32 (Right to Constitutional Remedies). [1 Mark]\nQ2: Which sector is also known as the Service Sector in Indian economy?\nAns: Tertiary Sector (Transport, Banking, Healthcare, Education). [1 Mark]\n### 2 Marks Short Answer Questions\nQ3: Define Gross Domestic Product (GDP).\nAns: GDP is the total monetary value of all the finished goods and services produced within the domestic territory of a country during a specific period of time (normally one year). [2 Marks]\nQ4: What are the fundamental rights guaranteed by the Indian Constitution?\nAns: 1. Right to Equality, 2. Right to Freedom, 3. Right against Exploitation, 4. Right to Freedom of Religion, 5. Cultural and Educational Rights, 6. Right to Constitutional Remedies. [2 Marks]\n### 5 Marks Essay Question\nQ5: Explain the salient features of the Constitution of India.\nAns: Step 1: Lengthiest Written Constitution: Most detailed constitution in the world with Preamble, Articles, Parts, and Schedules. [1 Mark]\nStep 2: Blend of Rigidity and Flexibility: Some provisions require special parliamentary majority, others require simple majority. [1 Mark]\nStep 3: Federal System with Unitary Bias: Dual government structure with strong central power during emergencies. [1 Mark]\nStep 4: Secular State & Universal Adult Suffrage: No state religion; equal voting rights for all citizens aged 18 and above without discrimination. [1 Mark]\nStep 5: Independent Judiciary & Fundamental Rights: Single integrated judicial system with Supreme Court as guardian of rights. [1 Mark]\n"
+    }
+  ]
+}

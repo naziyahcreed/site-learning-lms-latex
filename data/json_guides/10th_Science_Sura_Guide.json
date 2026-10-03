@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "source_pdf": "10th_Science_Sura_Guide.pdf",
+    "subject": "Science (அறிவியல்)",
+    "subject_code": "sci_10",
+    "standard": "10th Standard (SSLC)",
+    "curriculum": "Tamil Nadu State Board - Samacheer Kalvi",
+    "medium": "English / Tamil Medium",
+    "guide_publisher": "Sura Publications (சுரா கையேடு)",
+    "evaluation_scheme": "Sura Guide Centum Evaluation Rubric",
+    "total_pages": 2,
+    "total_chapters": 2,
+    "total_questions": 10
+  },
+  "chapters": [
+    {
+      "unit_id": "unit_1",
+      "title": "UNIT 1 (PHYSICS): Laws of Motion",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "The inertia of a body depends on...",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Mass of the object (Inertia is directly proportional to mass).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "Impulse is equals to...",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "Change in linear momentum (J = Delta p).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "State Newton's second law of motion.",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "The force acting on a body is directly proportional to the rate of change of linear momentum of the body and the change in momentum takes place in the direction of the force. Formula: F = ma.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "Differentiate between Mass and Weight.",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "1) Mass: Fundamental quantity, scalar, measured in kg, remains constant everywhere. 2) Weight: Derived quantity, vector, measured in Newton (N), varies with acceleration due to gravity (W = mg). [1 Mark]",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "State and prove the Law of Conservation of Linear Momentum.",
+          "category": "7 Marks Comprehensive",
+          "marks": 7,
+          "answer_text": "Statement: In the absence of an external force, the total linear momentum of a system of bodies remains constant.",
+          "steps": [
+            {
+              "step": "Step 1",
+              "content": "Setup: Let two bodies A and B of masses m1 and m2 move with initial velocities u1 and u2 (u1 > u2).",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 2",
+              "content": "Force during collision: Body A exerts action force F_B on B, and B exerts reaction force F_A on A.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 3",
+              "content": "By Newton's Second Law: F_B = m2(v2 - u2)/t and F_A = m1(v1 - u1)/t.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 4",
+              "content": "By Newton's Third Law: Action = -Reaction => F_B = -F_A.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 5",
+              "content": "Equating equations: m2(v2 - u2)/t = -m1(v1 - u1)/t => m2 v2 - m2 u2 = -m1 v1 + m1 u1.",
+              "mark_allocated": "1 Mark"
+            },
+            {
+              "step": "Step 6",
+              "content": "Final Result: m1 u1 + m2 u2 = m1 v1 + m2 v2. Total initial momentum = Total final momentum. Hence proved.",
+              "mark_allocated": "1 Mark"
+            }
+          ],
+          "rubric_mark": "1 Mark"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit_2",
+      "title": "UNIT 2 (PHYSICS): Optics & UNIT 7 (CHEMISTRY): Atoms and Molecules",
+      "questions": [
+        {
+          "question_id": "Q1",
+          "question_text": "The refractive index of diamond with respect to air is approximately...",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "2.42 (Diamond has very high refractive index).",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q2",
+          "question_text": "The value of Avogadro number is...",
+          "category": "1 Mark Objective / MCQ",
+          "marks": 1,
+          "answer_text": "6.023 x 10^23 particles per mole.",
+          "steps": [],
+          "rubric_mark": "1 Mark"
+        },
+        {
+          "question_id": "Q3",
+          "question_text": "State Snell's Law of Refraction.",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "The ratio of sine of angle of incidence to the sine of angle of refraction is equal to the ratio of refractive indices of the two media: sin i / sin r = mu2 / mu1.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q4",
+          "question_text": "Calculate the number of moles in 27g of Aluminium (Atomic mass of Al = 27).",
+          "category": "2 Marks Short Answer",
+          "marks": 2,
+          "answer_text": "Number of moles = Mass / Atomic Mass = 27 / 27 = 1 mole.",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        },
+        {
+          "question_id": "Q5",
+          "question_text": "Differentiate between Myopia and Hypermetropia.",
+          "category": "4 Marks Long Answer",
+          "marks": 4,
+          "answer_text": "1) Myopia (Short-sightedness): Nearby objects can be seen clearly; distant objects cannot. Eyeball lengthens. Focal length decreases. Corrected using Concave lens. 2) Hypermetropia (Long-sightedness): Distant objects can be seen clearly; nearby objects cannot. Eyeball shortens. Focal length increases. Corrected using Convex lens. [2 Marks]",
+          "steps": [],
+          "rubric_mark": "2 Marks"
+        }
+      ]
+    }
+  ],
+  "raw_pages": [
+    {
+      "page_number": 1,
+      "char_count": 1896,
+      "text": "10TH SCIENCE SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 SCIENCE\nSURA GUIDE COMPLETE QUESTION BANK (PHYSICS, CHEMISTRY, BIOLOGY) & EVALUATION SCHEME\nUNIT 1 (PHYSICS): Laws of Motion\n### 1 Mark Objective Questions\nQ1: The inertia of a body depends on...\nAns: Mass of the object (Inertia is directly proportional to mass). [1 Mark]\nQ2: Impulse is equals to...\nAns: Change in linear momentum (J = Delta p). [1 Mark]\n### 2 Marks Short Answer Questions\nQ3: State Newton's second law of motion.\nAns: The force acting on a body is directly proportional to the rate of change of linear momentum of the body and the change in momentum takes place in the direction of the force. Formula: F = ma. [2 Marks]\nQ4: Differentiate between Mass and Weight.\nAns: 1) Mass: Fundamental quantity, scalar, measured in kg, remains constant everywhere. [1 Mark]\n     2) Weight: Derived quantity, vector, measured in Newton (N), varies with acceleration due to gravity (W = mg). [1 Mark]\n### 7 Marks Comprehensive Board Question\nQ5: State and prove the Law of Conservation of Linear Momentum.\nAns: Statement: In the absence of an external force, the total linear momentum of a system of bodies remains constant. [1 Mark]\nStep 1: Setup: Let two bodies A and B of masses m1 and m2 move with initial velocities u1 and u2 (u1 > u2). [1 Mark]\nStep 2: Force during collision: Body A exerts action force F_B on B, and B exerts reaction force F_A on A. [1 Mark]\nStep 3: By Newton's Second Law: F_B = m2(v2 - u2)/t and F_A = m1(v1 - u1)/t. [1 Mark]\nStep 4: By Newton's Third Law: Action = -Reaction => F_B = -F_A. [1 Mark]\nStep 5: Equating equations: m2(v2 - u2)/t = -m1(v1 - u1)/t => m2 v2 - m2 u2 = -m1 v1 + m1 u1. [1 Mark]\nStep 6: Final Result: m1 u1 + m2 u2 = m1 v1 + m2 v2. Total initial momentum = Total final momentum. Hence proved. [1 Mark]\n"
+    },
+    {
+      "page_number": 2,
+      "char_count": 1308,
+      "text": "10TH SCIENCE SURA GUIDE\n================================================================================\nTAMIL NADU STATE BOARD - CLASS 10 SCIENCE - Continued\nUNIT 2 (PHYSICS): Optics & UNIT 7 (CHEMISTRY): Atoms and Molecules\n### 1 Mark Questions\nQ1: The refractive index of diamond with respect to air is approximately...\nAns: 2.42 (Diamond has very high refractive index). [1 Mark]\nQ2: The value of Avogadro number is...\nAns: 6.023 x 10^23 particles per mole. [1 Mark]\n### 2 Marks Questions\nQ3: State Snell's Law of Refraction.\nAns: The ratio of sine of angle of incidence to the sine of angle of refraction is equal to the ratio of refractive indices of the two media: sin i / sin r = mu2 / mu1. [2 Marks]\nQ4: Calculate the number of moles in 27g of Aluminium (Atomic mass of Al = 27).\nAns: Number of moles = Mass / Atomic Mass = 27 / 27 = 1 mole. [2 Marks]\n### 4 Marks Long Answer Question\nQ5: Differentiate between Myopia and Hypermetropia.\nAns: 1) Myopia (Short-sightedness): Nearby objects can be seen clearly; distant objects cannot. Eyeball lengthens. Focal length decreases. Corrected using Concave lens. [2 Marks]\n     2) Hypermetropia (Long-sightedness): Distant objects can be seen clearly; nearby objects cannot. Eyeball shortens. Focal length increases. Corrected using Convex lens. [2 Marks]\n"
+    }
+  ]
+}
